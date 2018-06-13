@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/nav_item_selected"
+        android:layout_width="@dimen/nav_item_selected_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+
+        android:src="@drawable/selected" />
+
+    <ImageView
+        android:id="@+id/nav_item_icon"
+        android:layout_width="@dimen/nav_item_icon_width"
+        android:layout_height="@dimen/nav_item_icon_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/nav_item_icon_margin_left"
+        android:src="@drawable/wishlist" />
+
+    <TextView
+        android:id="@+id/nav_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" android:layout_marginLeft="@dimen/nav_item_text_margin_left"
+        android:layout_toRightOf="@id/nav_item_icon"
+        android:textSize="@dimen/nav_item_text_size"
+        android:textColor="@color/nav_item_text_color"
+        android:text="Wish" />
+
+</RelativeLayout>
